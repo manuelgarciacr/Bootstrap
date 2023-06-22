@@ -1,1 +1,3 @@
 node_modules
+sass/*.css.map
+sass/*.css

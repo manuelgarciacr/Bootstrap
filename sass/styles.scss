@@ -6,10 +6,15 @@ nav {
     height: 4rem;
 }
 
-.page-height {
+.page-height-first {
     height: calc(100vh - 4rem);
 }
 
+.page-height {
+    height: 100vh;
+    background-color: antiquewhite;
+}
+ 
 .page-center {
     display: flex;
     flex-direction: column;
@@ -29,3 +34,4 @@ nav {
     margin-left: 30%;
     border-bottom-left-radius: 50%;
 }
+
