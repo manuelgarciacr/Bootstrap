@@ -1,0 +1,31 @@
+* {
+    user-select: none;
+}
+
+nav {
+    height: 4rem;
+}
+
+.page-height {
+    height: calc(100vh - 4rem);
+}
+
+.page-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-1 {
+    z-index: 10;
+    width: 70%;
+    margin-bottom: 3rem;
+}
+
+.shadow-1 {
+    width: 70%;
+    height: 40%;
+    position: relative;
+    margin-left: 30%;
+    border-bottom-left-radius: 50%;
+}
