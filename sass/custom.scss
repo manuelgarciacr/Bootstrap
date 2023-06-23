@@ -6,6 +6,7 @@ $carousel-indicator-spacer:          .5rem;
 $utilities: () !default;
 $utilities: map-merge((
     "width": (
+        responsive: true,
         property: width,
         class: w,
         values: (25: 25%,
