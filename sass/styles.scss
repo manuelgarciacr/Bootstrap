@@ -1,3 +1,5 @@
+$margin: 8rem;
+
 * {
     user-select: none;
 }
@@ -7,13 +9,9 @@ nav {
     margin-bottom: -3.5rem;
 }
 
-// .page-height-first {
-//     height: calc(100vh - 4rem);
-// }
-
 .page {
-    height: 100vh;
-    background-color: antiquewhite;
+    padding-top: 3.5rem;
+    overflow: hidden;
 }
 
 .page-center {
@@ -23,17 +21,24 @@ nav {
 }
 
 .image-1 {
-    width: 70%;
+    width: 85%;
     height: fit-content;
     position: relative;
-    margin-left: 30%;
+    margin-left: 15%;
     border-bottom-left-radius: 50%;
+    margin-top: 15%;
+}
+
+.image-1-border {
+    position: absolute;
+    width: 100%;
+    background-color: white;
 }
 
 .image-1>img {
-    width: 100%;
+    width: 110%;
     margin-left: -20%;
-    transform: translateY(-30%);
+    transform: translateY(-10%);
 }
 
 .image-2 {

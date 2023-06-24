@@ -1,0 +1,77 @@
+$primary: #5265E1;
+$secondary: #FA5959;
+
+$carousel-indicator-width:           8rem;
+$carousel-indicator-height:          3rem;
+$carousel-indicator-active-bg:       $secondary;
+$carousel-indicator-spacer:          .5rem;
+
+$utilities: () !default;
+$utilities: map-merge((
+    "width": (
+        responsive: true,
+        property: width,
+        class: w,
+        values: (25: 25%,
+            30: 30%,
+            50: 50%,
+            75: 75%,
+            100: 100%,
+            auto: auto
+        )
+    ),
+    "viewport-height": (
+        responsive: true,
+        property: height,
+        class: vh,
+        values: (100: 100vh)
+    )
+), $utilities );
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  10: $spacer * 6
+) !default;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/nav";
+
+
+.navbar-collapse {
+    z-index: 10;
+}
+
+.nav-link {
+    padding: .5rem 1rem;
+    color: rgba(0,0,0,.55);
+}
+
+.carousel-indicators {
+    top: 0;
+    bottom: auto;
+    height: 4.5rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    text-indent: 0;
+    min-width: 8rem;
+    border-bottom: 10px solid ghostwhite;
+    background-color: transparent;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+    text-align: center;
+}
+
+.carousel-indicators [data-bs-target].active {
+    border-bottom-color: $secondary;
+}
+
+.carousel-inner {
+    padding-top: 6.5rem;
+}
