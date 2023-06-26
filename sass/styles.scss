@@ -4,20 +4,24 @@ $margin: 8rem;
     user-select: none;
 }
 
+body {
+    min-width: 16rem;
+}
+
 nav {
     height: 3.5rem;
     margin-bottom: -3.5rem;
-}
-
-.page {
-    padding-top: 3.5rem;
-    overflow: hidden;
 }
 
 .page-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.page-1 {
+    padding-top: 3.5rem;
+    //min-height: 30rem;
 }
 
 .image-1 {
@@ -29,28 +33,39 @@ nav {
     margin-top: 15%;
 }
 
+.image-1>img {
+    width: 115%;
+    margin-left: -20%;
+    transform: translateY(-10%);
+}
+
 .image-1-border {
     position: absolute;
     width: 100%;
     background-color: white;
 }
 
-.image-1>img {
-    width: 110%;
-    margin-left: -20%;
-    transform: translateY(-10%);
+.page-2 {
+    min-height: 25rem;
 }
 
 .image-2 {
-    width: 70%;
+    width: 85%;
     height: fit-content;
     position: relative;
-    margin-right: 30%;
+    margin: 20% 15% 20% 0;
     border-bottom-right-radius: 50%;
 }
 
 .image-2>img {
     width: 100%;
-    margin-right: -20%;
-    transform: translateY(-30%);
+    margin-left: 10%;
+    transform: translateY(-20%);
 }
+
+.image-2-border {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+}
+

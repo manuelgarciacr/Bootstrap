@@ -1,30 +1,81 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 
-$carousel-indicator-width:           8rem;
-$carousel-indicator-height:          3rem;
-$carousel-indicator-active-bg:       $secondary;
-$carousel-indicator-spacer:          .5rem;
+$nav-tabs-link-active-border-color:  $secondary;
+
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+$h7-font-size:                $font-size-base * .7;
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $h7-font-size  // New font-size to customize the navbar
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  smmd: 660px,  // New breakpoint to customize the navbar
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
 
 $utilities: () !default;
 $utilities: map-merge((
-    "width": (
+    "font-size": (
+        responsive: true,   // Now is responsive
+        rfs: true,
+        property: font-size,
+        class: fs,
+        values: $font-sizes
+    ),
+    "width": (              // Now is responsive
         responsive: true,
         property: width,
         class: w,
         values: (25: 25%,
-            30: 30%,
+            30: 30%,        // New value
             50: 50%,
             75: 75%,
             100: 100%,
             auto: auto
         )
     ),
-    "viewport-height": (
+    "viewport-height": (    // Now is responsive
         responsive: true,
         property: height,
         class: vh,
         values: (100: 100vh)
+    ),
+    "height": (
+      property: height,
+      class: h,
+      values: (
+        10: 10%,            // New value
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    "min-height": (         // New map
+      property: min-height,
+      class: min-h,
+      values: (30: 30 * $font-size-base)
     )
 ), $utilities );
 
@@ -40,38 +91,23 @@ $spacers: (
 ) !default;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "../node_modules/bootstrap/scss/nav";
-
 
 .navbar-collapse {
     z-index: 10;
 }
 
+// Main menu
 .nav-link {
     padding: .5rem 1rem;
     color: rgba(0,0,0,.55);
 }
 
-.carousel-indicators {
-    top: 0;
-    bottom: auto;
-    height: 4.5rem;
+.nav-tabs .nav-link {
+    border: none;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
-.carousel-indicators [data-bs-target] {
-    text-indent: 0;
-    min-width: 8rem;
-    border-bottom: 10px solid ghostwhite;
-    background-color: transparent;
-    opacity: 1;
-    transition: opacity 0.6s ease;
-    text-align: center;
-}
-
-.carousel-indicators [data-bs-target].active {
-    border-bottom-color: $secondary;
-}
-
-.carousel-inner {
-    padding-top: 6.5rem;
+.nav-tabs .nav-link.active {
+    border-bottom: 10px solid $secondary;
 }
