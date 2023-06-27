@@ -19,52 +19,59 @@ nav {
     justify-content: center;
 }
 
-// .page-1 {
-//     padding-top: 3.5rem;
-// }
-
-.image-1 {
-    width: 85%;
-    height: fit-content;
-    position: relative;
-    margin-left: 15%;
-    border-bottom-left-radius: 50%;
-    margin-top: 15%;
+#id-home {
+    .cls-image {
+        width: 85%;
+        height: fit-content;
+        position: relative;
+        margin-left: 15%;
+        border-bottom-left-radius: 50%;
+        margin-top: 15%;
+    }
+    
+    .cls-image>img {
+        width: 115%;
+        margin-left: -20%;
+        transform: translateY(-10%);
+    }
+    
+    .cls-image-border {
+        position: absolute;
+        width: 100%;
+        background-color: white;
+    }
 }
 
-.image-1>img {
-    width: 115%;
-    margin-left: -20%;
-    transform: translateY(-10%);
+#id-features .tab-pane {
+    .cls-image {
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        margin: 30% 0 20% -10%;
+        border-bottom-right-radius: 50%;
+    }
+
+    .cls-image>img {
+        width: 75%;
+        margin-left: 32%;
+        transform: translateY(-25%);
+    }
+    
+    .cls-image-border {
+        position: absolute;
+        width: 100%;
+        background-color: white;
+    }
 }
 
-.image-1-border {
-    position: absolute;
-    width: 100%;
-    background-color: white;
-}
-
-// .page-2 {
-//     min-height: 510rem;
-// }
-
-.image-2 {
-    width: 100%;
-    height: fit-content;
-    position: relative;
-    margin: 30% 0 20% -10%;
-    border-bottom-right-radius: 50%;
-}
-
-.image-2>img {
-    width: 75%;
-    margin-left: 32%;
-    transform: translateY(-25%);
-}
-
-.image-2-border {
-    position: absolute;
-    width: 100%;
-    background-color: white;
+#id-downloads {
+    padding-bottom: 20%;
+    
+    .card.cls-tv-10 {
+        transform: translateY(10%);
+    }
+    .card.cls-tv-20 {
+        transform: translateY(20%);
+    }
 }
 

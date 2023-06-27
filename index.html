@@ -49,7 +49,7 @@
     </nav><!--      Navbar     --> 
     <main>
         <div id="id-home" class="row flex-column-reverse flex-sm-row">
-            <div class="flex-nowrap min-h-30 vh-sm-100 text-center text-md-start col-sm-6 page-center ps-md-10 px-2">
+            <div class="flex-nowrap min-vh-sm-100 text-center text-md-start col-sm-6 page-center ps-md-10 px-2 mt-5">
                 <h1 class="px-2 mb-0">A Simple Bookmark Manager</h1>
                 <p class="px-2 my-4 text-black-50">A clean and simple interface to organize your favourite websites. Open a new
                     browser tab and see your sites load instantly. Try it for free.
@@ -59,129 +59,134 @@
                     <button class="btn btn-light">Get it on Firefox</button>
                 </div>
             </div><!--     Home first page     -->
-            <div class="page-1 min-h-30 vh-sm-100 text-center col-sm-6 page-center px-0">
-                <div class="image-1 bg-primary">
-                    <div class="image-1-border h-25"></div> 
+            <div class="page-1 min-vh-sm-100 text-center col-sm-6 page-center px-0 mt-5">
+                <div class="cls-image bg-primary">
+                    <div class="cls-image-border h-25"></div> 
                     <img src="img/illustration-hero.svg" alt="Decorative image"
                         class="d-block">
                 </div>
             </div>
         </div><!--     End Home page     -->
-        <div id="id-features" class="row flex-nowrap flex-column justify-content-evenly align-items-center vh-sm-100 text-center">
-            <h2 class="w-50">Features</h2>
-            <p class="w-100 w-sm-75 text-black-50">Our aim is to make quick and easy for you to access your favourite web
-                sites. Your bookmarks sync between your devices so you can access them on the go.
-            </p>
-            <ul class="nav nav-tabs justify-content-center px-3">
-                <li class="nav-item">
-                  <button class="nav-link active" id="id-tab-bookmarking" data-bs-toggle="tab" data-bs-target="#id-bookmarking" aria-controls="id-bookmarking" role="tab"  aria-selected="true">Simple Bookmarking</button>
-                </li>
-                <li class="nav-item">
-                  <button class="nav-link" id="id-tab-searching" data-bs-toggle="tab" data-bs-target="#id-searching" aria-controls="id-searching" role="tab"  aria-selected="false">Speedy Searching</button>
-                </li>
-                <li class="nav-item">
-                  <button class="nav-link" id="id-tab-sharing" data-bs-toggle="tab" data-bs-target="#id-sharing" aria-controls="id-sharing" role="tab"  aria-selected="false">Easy Sharing</button>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane fade active show" id="id-bookmarking" role="tabpanel" aria-labelledby="id-tab-bookmarking">
-                    <div class="row flex-column flex-sm-row">
-                        <div class="text-center col-sm-6 px-0">
-                            <div class="bg-primary image-2">
-                                <div class="image-2-border h-10"></div> 
-                                <img src="img/illustration-features-tab-1.svg" alt="Decorative image"
-                                    class="d-block">
-                            </div>
-                        </div><!--     End Bookmarking image     -->
-                        <div class="text-center text-md-start col-sm-6 d-flex flex-column justify-content-center px-2">
-                            <h2 class="px-2 mb-0">Bookmark in one click</h1>
-                            <p class="px-2 pe-md-10 my-4 text-black-50">Onganize your bookmarks however you like. Our simple drag-and-drop 
-                                interface gives you complete control over how you manage your favourite sites.
-                            </p>
-                            <div class="px-2 d-flex gap-3 justify-content-left">
-                                <button class="btn btn-primary">More Info</button>
-                            </div>
-                        </div><!--     End Bookmarking text     -->
-                    </div>
-                </div><!--     End Bookmarking tabpanel     -->
-                <div class="tab-pane fade" id="id-searching" role="tabpanel" aria-labelledby="id-tab-searching">
-                    <div class="row flex-column flex-sm-row">
-                        <div class="text-center col-sm-6 px-0">
-                            <div class="bg-primary image-2">
-                                <div class="image-2-border h-10"></div> 
-                                <img src="img/illustration-features-tab-2.svg" alt="Decorative image"
-                                    class="d-block">
-                            </div>
-                        </div><!--     End Searching image     -->
-                        <div class="text-center text-md-start col-sm-6 d-flex flex-column justify-content-center px-2">
-                            <h2 class="px-2 mb-0">Searching faster</h1>
-                            <p class="px-2 pe-md-10 my-4 text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing 
-                                elit. Mollitia adipisci eligendi ipsa qui, consectetur magnam optio impedit ex vero laudantium, 
-                                aperiam perferendis? Architecto.
-                            </p>
-                            <div class="px-2 d-flex gap-3 justify-content-left">
-                                <button class="btn btn-primary">More Info</button>
-                            </div>
-                        </div><!--     End Searching text     -->
-                    </div>
-                </div><!--     End Searching tabpanel     -->
-                <div class="tab-pane fade" id="id-sharing" role="tabpanel" aria-labelledby="id-tab-sharing">
-                    <div class="row flex-column flex-sm-row">
-                        <div class="text-center col-sm-6 px-0">
-                            <div class="bg-primary image-2">
-                                <div class="image-2-border h-10"></div> 
-                                <img src="img/illustration-features-tab-3.svg" alt="Decorative image"
-                                    class="d-block">
-                            </div>
-                        </div><!--     End Sharing image     -->
-                        <div class="text-center text-md-start col-sm-6 d-flex flex-column justify-content-center px-2">
-                            <h2 class="px-2 mb-0">Sharing with Everyone</h1>
-                            <p class="px-2 pe-md-10 my-4 text-black-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Reiciendis hic placeat nesciunt alias delectus officiis ducimus velit distinctio quis, voluptate 
-                                obcaecati aspernatur, laborum, tempore ex ipsum aperiam! Voluptate, nobis beatae!
-                            </p>
-                            <div class="px-2 d-flex gap-3 justify-content-left">
-                                <button class="btn btn-primary">More Info</button>
-                            </div>
-                        </div><!--     End Sharing text     -->
-                    </div>
-                </div><!--     End Sharing tabpanel     -->
+        <div id="id-features" class="row min-vh-sm-100 mt-5">
+            <div class="d-flex flex-nowrap flex-column justify-content-evenly align-items-center text-center">
+                <h2 class="w-50">Features</h2>
+                <p class="w-100 w-sm-75 text-black-50">Our aim is to make quick and easy for you to access your favourite web
+                    sites. Your bookmarks sync between your devices so you can access them on the go.
+                </p>
+                <ul class="nav nav-tabs justify-content-center px-3">
+                    <li class="nav-item">
+                      <button class="nav-link active" id="id-tab-bookmarking" data-bs-toggle="tab" data-bs-target="#id-bookmarking" aria-controls="id-bookmarking" role="tab"  aria-selected="true">Simple Bookmarking</button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="nav-link" id="id-tab-searching" data-bs-toggle="tab" data-bs-target="#id-searching" aria-controls="id-searching" role="tab"  aria-selected="false">Speedy Searching</button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="nav-link" id="id-tab-sharing" data-bs-toggle="tab" data-bs-target="#id-sharing" aria-controls="id-sharing" role="tab"  aria-selected="false">Easy Sharing</button>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade active show" id="id-bookmarking" role="tabpanel" aria-labelledby="id-tab-bookmarking">
+                        <div class="row flex-column flex-sm-row">
+                            <div class="text-center col-sm-6 px-0">
+                                <div class="bg-primary cls-image">
+                                    <div class="cls-image-border h-10"></div> 
+                                    <img src="img/illustration-features-tab-1.svg" alt="Decorative image"
+                                        class="d-block">
+                                </div>
+                            </div><!--     End Bookmarking image     -->
+                            <div class="text-center text-md-start col-sm-6 d-flex flex-column justify-content-center px-2">
+                                <h2 class="px-2 mb-0">Bookmark in one click</h1>
+                                <p class="px-2 pe-md-10 my-4 text-black-50">Onganize your bookmarks however you like. Our simple drag-and-drop 
+                                    interface gives you complete control over how you manage your favourite sites.
+                                </p>
+                                <div class="px-2 d-flex gap-3 justify-content-left">
+                                    <button class="btn btn-primary">More Info</button>
+                                </div>
+                            </div><!--     End Bookmarking text     -->
+                        </div>
+                    </div><!--     End Bookmarking tabpanel     -->
+                    <div class="tab-pane fade" id="id-searching" role="tabpanel" aria-labelledby="id-tab-searching">
+                        <div class="row flex-column flex-sm-row">
+                            <div class="text-center col-sm-6 px-0">
+                                <div class="bg-primary cls-image">
+                                    <div class="cls-image-border h-10"></div> 
+                                    <img src="img/illustration-features-tab-2.svg" alt="Decorative image"
+                                        class="d-block">
+                                </div>
+                            </div><!--     End Searching image     -->
+                            <div class="text-center text-md-start col-sm-6 d-flex flex-column justify-content-center px-2">
+                                <h2 class="px-2 mb-0">Searching faster</h1>
+                                <p class="px-2 pe-md-10 my-4 text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                    elit. Mollitia adipisci eligendi ipsa qui, consectetur magnam optio impedit ex vero laudantium, 
+                                    aperiam perferendis? Architecto.
+                                </p>
+                                <div class="px-2 d-flex gap-3 justify-content-left">
+                                    <button class="btn btn-primary">More Info</button>
+                                </div>
+                            </div><!--     End Searching text     -->
+                        </div>
+                    </div><!--     End Searching tabpanel     -->
+                    <div class="tab-pane fade" id="id-sharing" role="tabpanel" aria-labelledby="id-tab-sharing">
+                        <div class="row flex-column flex-sm-row">
+                            <div class="text-center col-sm-6 px-0">
+                                <div class="bg-primary cls-image">
+                                    <div class="cls-image-border h-10"></div> 
+                                    <img src="img/illustration-features-tab-3.svg" alt="Decorative image"
+                                        class="d-block">
+                                </div>
+                            </div><!--     End Sharing image     -->
+                            <div class="text-center text-md-start col-sm-6 d-flex flex-column justify-content-center px-2">
+                                <h2 class="px-2 mb-0">Sharing with Everyone</h1>
+                                <p class="px-2 pe-md-10 my-4 text-black-50">Reiciendis hic placeat nesciunt alias delectus officiis 
+                                    ducimus velit distinctio quis, voluptate obcaecati aspernatur, laborum, tempore ex ipsum aperiam! 
+                                    Voluptate, nobis beatae!
+                                </p>
+                                <div class="px-2 d-flex gap-3 justify-content-left">
+                                    <button class="btn btn-primary">More Info</button>
+                                </div>
+                            </div><!--     End Sharing text     -->
+                        </div>
+                    </div><!--     End Sharing tabpanel     -->
+                </div>
             </div>
         </div>
-        <!-- <div id="id-downloads" class="row page">
-            <div class="flex-column align-items-center">
-                <h2 class="w-30 text-center">Download the extension</h2>
-                <p class="w-30 text-center">We've got more browsers in the pipeline. Please
+        <div id="id-downloads" class="row min-vh-sm-100 mt-5 mt-sm-0">
+            <div class="d-flex flex-nowrap flex-column justify-content-evenly align-items-center text-center mt-3 mt-sm-0">
+                <h2 class="w-50 mb-4">Download the extension</h2>
+                <p class="w-100 w-sm-75 text-black-50">We've got more browsers in the pipeline. Please
                     let us know if you've got a favourite you'd like us to prioritize.
                 </p>
+                <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center w-100 gap-4">
+                    <div class="card w-75 w-sm-25" style="width: 18rem;">
+                        <img src="img/logo-chrome.svg" class="card-img-top" alt="Logo of Chrome">
+                        <div class="card-body">
+                            <h5 class="card-title">Add to Chrome</h5>
+                            <p class="card-text">Minimum version 62</p>
+                            <img src="img/bg-dots.svg" class="card-img-bottom" alt="Dots decoration image">
+                            <a href="#" class="btn btn-primary my-3">Add & Install Extension</a>
+                        </div>
+                    </div>
+                    <div class="card w-75 w-sm-25 cls-tv-10" style="width: 18rem;">
+                        <img src="img/logo-firefox.svg" class="card-img-top" alt="Logo of Firefox">
+                        <div class="card-body">
+                            <h5 class="card-title">Add to Firefox</h5>
+                            <p class="card-text">Minimum version 55</p>
+                            <img src="img/bg-dots.svg" class="card-img-bottom" alt="Dots decoration image">
+                            <a href="#" class="btn btn-primary my-3">Add & Install Extension</a>
+                        </div>
+                    </div>
+                    <div class="card w-75 w-sm-25 cls-tv-20" style="width: 18rem;">
+                        <img src="img/logo-opera.svg" class="card-img-top" alt="Logo of Opera">
+                        <div class="card-body">
+                            <h5 class="card-title">Add to Opera</h5>
+                            <p class="card-text">Minimum version 46</p>
+                            <img src="img/bg-dots.svg" class="card-img-bottom" alt="Dots decoration image">
+                            <a href="#" class="btn btn-primary my-3">Add & Install Extension</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row justify-content-sm-center gap-3">
-                <div class="card w-75 w-sm-25" style="width: 18rem;">
-                    <img src="img/logo-chrome.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Add to Chrome</h5>
-                        <p class="card-text">Minimum version 62</p>
-                        <a href="#" class="btn btn-primary">Add & Install Extension</a>
-                    </div>
-                </div>
-                <div class="card w-75 w-sm-25 mt-4" style="width: 18rem;">
-                    <img src="img/logo-firefox.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Add to Firefox</h5>
-                        <p class="card-text">Minimum version 55</p>
-                        <a href="#" class="btn btn-primary">Add & Install Extension</a>
-                    </div>
-                </div>
-                <div class="card w-75 w-sm-25 mt-5" style="width: 18rem;">
-                    <img src="img/logo-opera.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Add to Opera</h5>
-                        <p class="card-text">Minimum version 46</p>
-                        <a href="#" class="btn btn-primary">Add & Install Extension</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+        </div>
         <!-- <div id="id-faqs" class="row page">
             <div class="flex-column align-items-center">
                 <h2 class="w-30 text-center">Frequently Asked Questions</h2>
