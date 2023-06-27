@@ -1,9 +1,10 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 
-$nav-tabs-link-active-border-color:  $secondary;
-
-$enable-negative-margins: true;     // Negative margins are disabled by default
+$navbar-nav-link-padding-x:     1rem;
+$accordion-button-icon:         url("../img/icon-arrow.svg");
+$accordion-button-active-icon:  url("../img/icon-arrow.svg");
+$enable-negative-margins:       true;     // Negative margins are disabled by default
 
 $font-size-base:              1rem; // Assumes the browser default, typically `16px`
 
@@ -100,6 +101,7 @@ $spacers: (
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+
 .navbar-collapse {
     z-index: 10;
 }
@@ -118,7 +120,7 @@ $spacers: (
 }
 
 .nav-tabs .nav-link.active {
-    border-bottom: 10px solid $secondary;
+   border-bottom: 10px solid $secondary;
 }
 
 // Cards
