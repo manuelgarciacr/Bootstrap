@@ -75,3 +75,18 @@ nav {
     }
 }
 
+$footer-color: #242946;
+
+#id-footer {
+    background-color: $footer-color;
+    .list-group-item {
+        background-color: $footer-color;
+        border-color: $footer-color;
+        a {
+            color: lightgray !important;
+        }
+        
+    }
+}
+
+
