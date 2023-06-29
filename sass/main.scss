@@ -54,8 +54,8 @@ $utilities: map-merge((
         class: fs,
         values: $font-sizes
     ),
-    "width": (              // Now is responsive
-        responsive: true,
+    "width": (            
+        responsive: true,   // Now is responsive
         property: width,
         class: w,
         values: (25: 25%,
@@ -66,14 +66,14 @@ $utilities: map-merge((
             auto: auto
         )
     ),
-    "viewport-height": (    // Now is responsive
-        responsive: true,
+    "viewport-height": (    
+        responsive: true,   // Now is responsive
         property: height,
         class: vh,
         values: (100: 100vh)
     ),
-    "min-viewport-height": (    // Now is responsive
-        responsive: true,
+    "min-viewport-height": (    
+        responsive: true,   // Now is responsive
         property: min-height,
         class: min-vh,
         values: (100: 100vh)
@@ -105,7 +105,7 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
-  10: $spacer * 6
+  10: $spacer * 6       // New value
 ) !default;
 
 //@import "../node_modules/bootstrap/scss/bootstrap.scss";
